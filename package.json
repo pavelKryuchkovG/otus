@@ -6,8 +6,11 @@
   "scripts": {
     "clcl": "npx ts-node script",
     "test": "npx jest",
-    "lint": "npx eslint --ext .js,.jsx,.ts,.tsx --fix ./",
-    "check": "npm test && npm run lint"
+    "lint": "npx eslint --ext .js,.ts,.tsx --fix ./",
+    "check": "npm test && npm run lint",
+    "build": "tsc --project tsconfig.json",
+    "start": "node ./dist/index.js",
+    "debug": "npx --inspect ts-node script"
   },
   "husky": {
     "hooks": {
@@ -35,6 +38,7 @@
     "@typescript-eslint/parser": "^4.28.3",
     "eslint": "^7.30.0",
     "eslint-plugin-react": "^7.24.0",
+    "fast-check": "^2.17.0",
     "husky": "^7.0.1",
     "jest": "^27.0.6",
     "prettier": "2.3.2",
@@ -42,5 +46,7 @@
     "typescript": "^4.3.5",
     "webpack": "^5.44.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "faker": "^5.5.3"
+  }
 }
