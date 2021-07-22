@@ -6,6 +6,7 @@
 # dependencies
 /node_modules
 /.pnp
+/.storybook
 .pnp.js
 
 # caches
