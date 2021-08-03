@@ -6,8 +6,9 @@ afterEach(cleanup);
 
 describe("Field", () => {
     it("renders Field cells", () => {
-        render(
-            <Field x={5} y={5} onClick={() => 3} />
-        )
+        const { container } = render(<Field x={5} y={5} onClick={() => 3}/>)
+        const field = container.getElementsByClassName('baseCell')
+
+        expect(field.length).toBe(25);
     })
 })

@@ -15,11 +15,11 @@ type TCellItems = {
   /**
    * Строка
    */
-  x?: number;
+  x: number;
   /**
    * Колнка
    */
-  y?: number;
+  y: number;
   /**
    * Optional click handler
    */
