@@ -1,0 +1,12 @@
+.baseCell {
+    width: 10px;
+    height: 10px;
+    border: 2px solid;
+    border-color: gray;
+    display: inline-block;
+    /* line-height: 25px; */
+    text-align: center;
+    /* margin: 5px; */
+    vertical-align: bottom;
+    background-color: black;
+}
